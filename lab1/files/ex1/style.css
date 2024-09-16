@@ -1,0 +1,108 @@
+body {
+    background-color: lightblue; /* Zmienia tło strony na jasnoniebieskie */
+  }
+
+#akapit1 {
+    background-color: lightcoral;
+    font-size: 112%;
+    font-style: inherit;
+    font-weight: 100;
+    padding: 20px;
+}
+#akapit2 {
+    background-color: lightgreen;
+    font-size: larger;
+    font-style: oblique;
+    font-weight: 1000;
+    width:20%;
+    height: 200px;
+    overflow: scroll;
+    margin-left: 50px;
+
+}
+#akapit3 {
+    background-color: rgb(119, 119, 233);
+    font-size:x-small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 10%;
+    height:100px;
+    overflow: auto;
+}
+#akapit4 {
+    background-color: lightpink;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 100px 20px 30px;
+}
+#table1{
+    margin: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+th{
+    background-color: rgb(48, 81, 229);
+    height: 40px;
+}  
+td{
+    text-align: center;
+    height: 40px;
+
+}
+.row1:nth-child(odd){
+    background-color: rgb(120, 127, 202);
+}
+.row1:nth-child(even){
+    background-color: rgb(175, 188, 229);
+}
+
+#table2{
+    width:100%;
+    border: black;
+}
+.row2{
+    background-color: lightslategray;
+}
+#table2 {
+    border: 2px solid rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+.ceil2{
+    background-color: rgb(43, 43, 43);
+}
+#table2, #border{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+div{
+    height: 300px;
+    text-align: justify;
+    height: auto;
+    position:static;
+}
+#zdj1{
+    float:left;
+    height: 200px;
+    padding-right: 20px;
+}
+#zdj2{
+    float:right;
+    height:200px;
+    padding: 20px 0px 20px 20px;
+}
+#zdj3{
+    width:100%
+}
+#zdj5{
+    width:100%
+}
+#eu_list{
+    background-image: url(images/eu.jpgg.jpg);
+    position: absolute;
+    left:4vw;
+}
+#asia_list{
+    background-image: url(images/china.png);
+    position: absolute;
+    right: 4vw;
+}
