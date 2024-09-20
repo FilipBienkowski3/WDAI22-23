@@ -1,0 +1,124 @@
+ul.row{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    list-style: none;
+    justify-items: center;
+}
+li.row{
+    transition: background-color 0.3s;
+    border: 2px dotted gray;
+    background-color: hsl(0, 17%, 91%);
+    flex-basis: 100%;
+    align-items: center;
+    align-content: center;
+    padding-left: 5px;
+
+}
+li img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+img{
+    width: auto;
+    height: auto;
+}
+body {
+	font: 102.5% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 20px;
+}
+li:nth-child(3):hover img,
+li:nth-child(4):hover img,
+li:nth-child(5):hover img,
+li:nth-child(6):hover img{
+    content: url(images/go.png);
+}
+li:nth-child(3):hover,
+li:nth-child(4):hover,
+li:nth-child(5):hover,
+li:nth-child(6):hover{
+    background-color: greenyellow;
+
+}
+li.column:nth-child(2),
+li.row:nth-child(2){
+    background-color: white;
+}
+li.row:nth-child(2),
+li.row:nth-child(3),
+li.row:nth-child(4),
+li.row:nth-child(5),
+li.row:nth-child(6){
+    border-left: none;
+}
+
+ul.column{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    list-style: none;
+    justify-items: center;
+}
+li.column{
+    transition: background-color 0.3s;
+    border: 2px dotted gray;
+    background-color: hsl(0, 17%, 91%);
+    height: 50px;
+
+    align-items: center;
+    align-content: center;
+    padding-left: 5px;
+
+}
+
+
+li.column:nth-child(2),
+li.column:nth-child(3),
+li.column:nth-child(4),
+li.column:nth-child(5),
+li.column:nth-child(6){
+    border-top: none;
+}
+
+
+
+
+
+/*  */
+
+header{
+    display: flex;
+    border: 1px solid red;
+    border-left: none;
+    border-right: none;
+    height: 50px;
+    justify-items: center;
+    justify-content: space-between;
+
+}
+#first{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-around;
+
+}
+.first,.second{
+    background-color: red;
+    border: 1px solid blue;
+    color: white;
+    height: 95%;
+    display: flex;               
+    justify-content: center;     
+    align-items: center;           
+    text-align: center; 
+}
+#second{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: flex-end;
+
+}
+
