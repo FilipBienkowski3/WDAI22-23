@@ -1,17 +1,71 @@
 body {
-	font-family: Tahoma, "Lucida Grande", Arial, sans-serif;
-	font-size: 62.5%;
+	font-size: 66.5%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width:700px;
+}
+.cont{
+	background-color: rgb(244, 239, 239);
+	margin: 40px 30px;
+	padding: 70px 5px 100px 30px;
+}
+.head{
+	position: relative;
+	padding-left: 20px;
+	margin-left: -30px;
+	margin-right: -5px;;
+	margin-top: 10px;
+	width: auto;
+	background-color: #0f6971;
+	border-bottom: rgb(215, 215, 78) solid 1px;
+	border-top: rgb(215, 215, 78) solid 1px;
+
+}
+.main{
+	display: flex;
+	position: relative;
+}
+.left{
+	max-width: 60%;
+}
+.sidebar{
+	padding-top: 20p;
+	margin: 10px;
+	position: absolute;
+	right: 0;
+	top:7%;
+	background-color: rgb(232, 232, 160);
+	height: 370px;
+	width: 200px;
+	font-size: 110%;
+	border-bottom: 1px orange solid;
+	border-top: 3px orange solid;
+
+
+}
+.sidebar h3 {
+    justify-content: center;
+
 }
 h1 {
+	margin: 10px;
 	font-size: 2.4em;
+	color: #ffffff;
 }
 h2 {
-	font-size: 1.8em;
-	color: #666666;
+	font-size: 2em;
+	color: #000000;
+	border-bottom: black solid 1px;
 }
 h3 {
 	font-size: 1.4em;
-	color: #14556B;
+	color: #000000;
+	text-align: center;
 }
 p, ul, ol {
 	font-size: 1.2em;
@@ -19,6 +73,6 @@ p, ul, ol {
 }
 
 ul {
-	color: #666666;
-	list-style: square;
+	color: #000000;
+	/* list-style: square; */
 }

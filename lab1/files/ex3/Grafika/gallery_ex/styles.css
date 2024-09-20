@@ -1,1 +1,46 @@
 
+body {
+    background-color: rgb(181, 131, 131);
+    justify-content: center;
+    align-items: center;
+	position: absolute;
+	left: 30%;
+	width:700px;
+    height: 1000px;
+}
+#content{
+    background-color: white;
+}
+header{
+    padding-left: 10px;
+    border-style: dotted;
+    border: 2px dotted rgb(69, 69, 213);
+    border-bottom: none;
+    border-right: none;
+
+
+}
+header h1{
+    color: rgb(33, 119, 185);
+
+}
+#gallery{
+    margin-left: 20px;
+}
+#gallery p{
+    text-align: center;
+}
+.figure{
+    width: 230px;
+}
+.row1, .row2, .row3{
+    display: flex;
+}
+
+.photo{
+    text-align: center;
+} 
+img{
+    border: 5px solid #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
