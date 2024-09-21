@@ -1,0 +1,10 @@
+body{
+    position: relative;
+    left: 40%;
+    
+}
+form{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}

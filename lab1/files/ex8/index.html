@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            Numer konta:
+            <label for="accountnr" title="Wprowadz numer" ></label>
+            <input type="text" id="input1" placeholder="12 1200 1200 1200 1200 1200 1200" maxlength="26"required>
+            <br>
+            Imię:
+            <label for="input2" title="Wprowadz imie"></label>
+            <input type="text" id="input2" pattern="[A-Za-z]{3,}" required placeholder="Jan" maxlength="20">
+            <br>
+
+            Nazwisko:
+            <label for="input3" title="Wprowadz nazwisko"></label>
+            <input type="text" id="input3" pattern="[A-Za-z]{3,}" required maxlength="30" placeholder="Kowalski">
+            <br>
+
+            <div class="gender-options">
+            Płeć:
+                <input type="radio" id="female" name="gender">
+                <label for="female">Kobieta</label>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Mężczyzna</label>
+            </div>
+
+            <br>
+
+
+            Adres Email
+            <label for="input5" title="Wprowadz email"></label>
+            <input type="email" id="input5" required placeholder="Filip333@onet.pl" pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9]{2,}">
+            <br>
+
+            Ulica
+            <label for="input6" title="Wprowadz nazwe ulicy"></label>
+            <input type="text" id="input6" pattern="^ul.\+[A-Za-z]{3,}"required placeholder="ul.Mroczki">
+            <br>
+
+            Numer domu
+            <label for="input7" title="Wprowadz numer domu"></label>
+            <input type="number" id="input7" min="0" max="1000" placeholder="0" required>
+            <br>
+
+            Numer mieszkania
+            <label for="input8" title="Podaj numer mieszkania"></label>
+            <input type="text" id="input8" min="0" max="1000" placeholder="0">
+            <br>
+
+            Strona domowa
+            <label for="input9" title="Podaj link do strony domowej"></label>
+            <input type="text" id="input9" required pattern="^https.\/\/+[A-Za-z0-9.-]{3,}">
+            <br>
+
+            Wiek
+            <label for="input10" title="Podaj wiek"></label>
+            <input type="number" id="input10" min="0" max="120" >
+            <br>
+
+            Pin
+            <label for="input11" title="Podaj pin"></label>
+            <input type="number" id="input11" min="0" max="1000">
+            <br>
+
+            Data urodzenia
+            <label for="input12" title="Podaj date urodzenia"></label>
+            <input type="date" id="input12"min="1900-01-01" max="2023-12-31">
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+
+        </form>
+    </main>
+</body>
+</html>
