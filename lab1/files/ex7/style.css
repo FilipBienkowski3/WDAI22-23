@@ -17,14 +17,19 @@ main{
     justify-content: space-around;
 }
 .panel{
+    position: relative;
     border-radius: 5%;
     width: 300px;
     background-color: gray;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .text{
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
 
+}
+figure{
+    padding: 0px;
+    margin: 0px;
 }
 img{
     width: 300px;
@@ -32,5 +37,6 @@ img{
 
 }
 h1{
-    margin: 0px;;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
