@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osadzenie filmu z Vimeo</title>
+    <title>MP3</title>
 </head>
 <body>
-    <h1>Mój film z Vimeo</h1>
-    <iframe src="https://player.vimeo.com/video/76979871" 
-            width="640" height="360" 
-            frameborder="0" 
-            allow="autoplay=1; fullscreen; picture-in-picture" 
-            allowfullscreen></iframe>
-    <script src="https://player.vimeo.com/api/player.js"></script>
+    <audio id="myAudio" src="assets/086-front-music.pl.mp3" controls  loop preload="none" a></audio>
+<button id="resetButton">Reset</button>
+<button id="skipButton">Skip 10 seconds</button>
+
+<script>
+  const audioElement = document.getElementById('myAudio');
+  
+  document.getElementById('resetButton').addEventListener('click', function() {
+    audioElement.currentTime = 0;
+    audioElement.play();
+  });
+
+  document.getElementById('skipButton').addEventListener('click', function() {
+    audioElement.currentTime += 10;  
+  });
+</script>
 </body>
 </html>
