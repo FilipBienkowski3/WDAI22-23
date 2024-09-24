@@ -1,0 +1,35 @@
+body{
+    border: 2px solid rgb(93, 93, 218);
+    width: 20%;
+    height: 150px;
+}
+section{
+    border: 2px dotted blue;
+    height: 100%;
+    border-bottom: none;
+    border-right: none;
+}
+.box{
+    display: flex;
+    height: 100%;
+}
+.box div{
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid rgb(48, 68, 197);
+    background-color: rgb(147, 208, 232);
+    width: 70px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.box div:nth-child(1){
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 15px;
+    align-items: flex-start;
+}
+.selected{
+    justify-self: center;
+    align-self: center;
+}
