@@ -10,9 +10,13 @@
 <main>
     <section class="gallery">
         <div class="card">
-            <figure class="img1">
-                <img src="Images/photo.jpeg" alt="image">
-            </figure>
+            <picture class="img1">
+                <source media="(max-width: 767px)" srcset="Images/2photo.jpg">
+                <source media="(min-width: 768px)" srcset="Images/photo.jpeg">
+                <img src="Images/photo.jpeg" alt="">
+            
+            
+            </picture>
             <div class="text">
                 <h1>A</h1>
                 <h4>A opis</h4>
