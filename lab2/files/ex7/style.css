@@ -1,0 +1,56 @@
+body{
+    height:150vh;
+    margin: 0px;
+    padding: 0;
+    background-color:  rgb(99, 99, 232);
+    position: relative;
+}
+.girl{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+  }
+.men{
+    position: absolute;
+    display: flex;
+
+}
+picture.men>img{
+    width:150px;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+picture.girl>img{
+    margin:10px;
+}
+
+#buttons{
+    position: relative;
+    top:-60px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    gap: 20px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+#index1, #index2{
+    background: white;
+    color: green;
+}
+#index3{
+    background: red;
+    color: white;
+}
