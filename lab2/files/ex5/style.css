@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(235, 235, 235);
+    display: flex;
+}
+nav{
+    width: 20%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #213454;
+}
+i{
+    padding:10px;
+    color:#213454
+}
+main{
+    width: 80%;
+}
+.box{
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;           
+    text-align: center;  
+    border-radius:0.5cap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.box:hover{
+    background-color: rgb(114, 218, 218);
+    transition: 0.3s;
+
+}
+.box:hover>i{
+    color: white;
+}
+
+@media only screen and (max-width: 767px){
+    b{
+        display: none;
+    }
+    nav{
+        width: 15%;
+    }
+    div{
+        display: flex;
+        justify-self: center;     
+        align-self: center;           
+        text-align: center;   
+        padding: 5px;
+    }
+}
