@@ -3,7 +3,8 @@ body{
     display: flex;
 }
 nav{
-    width: 20%;
+    min-width: 20%;
+    width: auto;
     height: 500px;
     display: flex;
     flex-direction: column;
