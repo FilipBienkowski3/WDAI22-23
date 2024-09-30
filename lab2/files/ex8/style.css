@@ -1,0 +1,86 @@
+body{
+    background-color: white;
+    height: 100vh;
+    margin: 0px;
+    padding: 0;
+
+
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    color:white;
+    height: 350px;
+    background-color: rgb(115, 165, 209);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    z-index: 1;
+    position: relative;
+
+}
+.text{
+    width: 40%;
+}
+#button1{
+    width: fit-content;
+    padding: 10px 16px;
+    border: 2px solid white;
+    margin: 20px;
+    border-radius: 20cap;
+}
+#button1:hover{
+    background-color: white;
+    color: rgb(115, 165, 209);
+
+}
+#button2{
+    background-color:rgb(115, 165, 209); ;
+    width: fit-content;
+    padding: 10px 16px;
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 20cap;
+    color: white;
+    margin-top:40px ;
+}
+#button2:hover{
+    background-color: white;
+    color: rgb(115, 165, 209);
+    border: 2px solid rgb(115, 165, 209);
+
+
+}
+
+input{
+    box-sizing:border-box;
+    width: 100%;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 10px;
+}
+
+.form {
+
+    color: rgb(115, 165, 209);
+    padding: 20px;
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    border-radius: 1cap;
+    animation: slide-in 1.5s ease forwards;
+}
+
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
