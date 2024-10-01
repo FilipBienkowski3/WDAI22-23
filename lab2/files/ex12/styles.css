@@ -1,0 +1,227 @@
+
+:root {
+    --primary-color: rgb(69, 69, 203);
+    --gradient-color1: rgb(121, 120, 227);
+    --gradient-color2: rgb(30, 33, 200);
+}
+.boot{
+    position: absolute;
+    width: 400px;
+    z-index: 2;
+    left: -90px;
+    top:70px;
+    transform: rotate(-20deg);
+
+}
+body {
+    height: 100vh;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    background-color: rgb(208, 204, 204);
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main {
+    background-color: rgb(208, 204, 204);
+    width: 750px;
+    height: 400px;
+    display: flex;
+}
+.icons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+}
+.left {
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    margin-right: 0;
+    width: 50%;
+    background-image: linear-gradient(45deg, var(--gradient-color1), var(--gradient-color2));
+}
+
+.left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    z-index: 1;
+}
+
+.nike-text {
+    display: flex;
+    margin-top: 90px;
+    font-size: 100px;
+    justify-content: center;
+    color: black;
+}
+
+.right {
+    font-size: small;
+    margin-left: 0;
+    padding: 10px;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-blue {
+    background-color: var(--primary-color);
+    padding: 8px;
+    margin-right: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.section {
+    border: 0.1px solid rgb(213, 208, 208);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding-bottom: 5px;
+}
+
+.sizes {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.size {
+    border-radius: 1cap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0;
+}
+
+
+
+input[type="radio"]:checked + label.size {
+    border: 2px solid black;
+}
+
+#c1 {
+    background-color: red;
+}
+#c2 {
+    background-color: rgb(0, 34, 255);
+}
+#c3 {
+    background-color: rgb(18, 21, 18);
+}
+#c4 {
+    background-color: rgb(0, 255, 81);
+}
+#c5 {
+    background-color: rgb(251, 255, 0);
+}
+
+#color1:checked ~ main {
+    --primary-color: red;
+    --gradient-color1: rgb(255, 102, 102);
+    --gradient-color2: rgb(204, 0, 0);
+}
+
+#color2:checked ~ main {
+    --primary-color: blue;
+    --gradient-color1: rgb(102, 153, 255);
+    --gradient-color2: rgb(0, 34, 255);
+}
+
+#color3:checked ~ main {
+    --primary-color: black;
+    --gradient-color1: rgb(64, 64, 64);
+    --gradient-color2: rgb(0, 0, 0);
+}
+
+#color4:checked ~ main {
+    --primary-color: green;
+    --gradient-color1: rgb(102, 255, 102);
+    --gradient-color2: rgb(0, 204, 0);
+}
+
+#color5:checked ~ main {
+    --primary-color: yellow;
+    --gradient-color1: rgb(255, 255, 153);
+    --gradient-color2: rgb(255, 255, 0);
+}
+
+#size1,
+#size2,
+#size3,
+#size4,
+#size5 {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+
+input{
+    display: none;
+}
+
+#section5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: none;
+    padding-top: 3px;
+}
+@media only screen and (max-width:800px){
+    .boot{
+        transform: rotate(0deg);
+        width: 300px;
+        top:90px;
+        left:-10px;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .left{
+        margin: 0px;
+    }
+}
