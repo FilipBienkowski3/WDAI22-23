@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wprowadź imię</title>
+</head>
+<body>
+    <div id="greeting">Twoje imię pojawi się tutaj.</div>
+
+    <button onclick="askForName()">Podaj imię</button>
+
+    <script>
+        function askForName() {
+            const name = prompt("Podaj swoje imię:");
+
+            if (name) {
+                document.getElementById("greeting").innerText = "Witaj, " + name + "!";
+            } else {
+                document.getElementById("greeting").innerText = "Nie podałeś imienia.";
+            }
+        }
+    </script>
+</body>
+</html>
