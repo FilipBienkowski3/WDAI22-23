@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="list">
+    </div>
+
+    <div class="form">
+        <form id="dataForm">
+            <div class="formelem" id="nameForms">
+                <p>Imię i Nazwisko</p>
+                <input type="text" id="name" maxlength="50" required pattern="[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+( [A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+)*(-[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+)?">
+            </div>
+            <div class="formelem" id="numberForms">
+                <p>Numer</p>
+                <input type="text" id="number" maxlength="50" required pattern="/^\+(?:[0-9] ?){6,14}[0-9]$/">
+            </div>
+            <div>
+                <button type="submit" class="buttons" id="send">
+                    Dodaj
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
