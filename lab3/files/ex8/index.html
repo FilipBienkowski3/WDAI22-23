@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <main class="passwordCard">
+        <div class="label" id="label1">
+            <p>Podaj nowe hasło:</p>
+            <input type="password" id="password" maxlength="50" required > <i class="fa-regular fa-eye-slash togglePassword"></i>
+        </div>
+        <div class="label" id="label2">
+            <p>Powtórz nowe hasło:</p>
+            <input type="password" id="repeatPassword" maxlength="50" required > <i class="fa-regular fa-eye-slash toggleRepeatPassword"></i>
+        </div>
+        <div class="req">
+            <p>Wymagania:</p>
+            <div id="text1" class="texts"><i class="fa-solid fa-circle-xmark circle1" style="color: #ff0019;"></i> at least 8 characters</div>
+            <div id="text2" class="texts"><i class="fa-solid fa-circle-xmark circle2" style="color: #ff0019;"></i> at least one special character</div>
+            <div id="text3" class="texts"><i class="fa-solid fa-circle-xmark circle3" style="color: #ff0019;"></i>  at least one capital letter</div>
+            <div id="text4" class="texts"><i class="fa-solid fa-circle-xmark circle4" style="color: #ff0019;"></i>  at least one digit</div>
+        </div>
+    </main>
+</body>
+</html>
